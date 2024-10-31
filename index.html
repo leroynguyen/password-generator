@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=VT323&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-content">
+        <h1>Generate a <br /><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <button id="generate-pwd-btn" onclick="generatePassword()">
+          Generate passwords
+        </button>
+        <hr />
+        <div class="inputs">
+          <button
+            class="copy-btn"
+            id="pwd-1"
+            onclick="copyPasswordOneToClipboard()"
+            aria-label="Copy Password 1"
+          ></button>
+          <button
+            class="copy-btn"
+            id="pwd-2"
+            onclick="copyPasswordTwoToClipboard()"
+            aria-label="Copy Password 2"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
